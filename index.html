@@ -10,15 +10,15 @@
 
 <body>
   <ul class="nav nav-tabs" id="myTab" role="tablist">
-    <li class="nav-item">
-      <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Busca Periódicos</a>
+    <li class="nav-item active">
+      <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">Busca Livros</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Busca Integrada</a>
+      <a class="nav-link" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Busca Periódicos</a>
     </li>
   </ul>
   <div class="tab-content" id="myTabContent">
-    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab" style="padding:20px" ;> <img src="https://uol.unifor.br/biblioteca/img/busca-integrada-periodicos.svg" class="img-responsive" alt="Busca Integrada Periódicos" style="max-width:250px;">
+    <div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home-tab" style="padding:20px" ;> <img src="https://uol.unifor.br/biblioteca/img/busca-integrada-periodicos.svg" class="img-responsive" alt="Busca Integrada Periódicos" style="max-width:250px;">
       <p id="item2">Pesquisa integrada no acervo de periódicos digitais.<br>
 
         <!-- EBSCO Search Box Begins -->
@@ -44,17 +44,111 @@
           </div>
         </div>
       </form>
-      <!-- EBSCO Search Box Ends -->
     </div>
-    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="padding:20px;"><img src="https://uol.unifor.br/biblioteca/img/busca-integrada.svg" class="img-responsive" alt="Busca Integrada Periódicos" style="max-width:250px;"><br><br>
-      <p id="tab1">Pesquisa integrada no acervo composto de livros, teses, dissertações, anais, vídeos analógicos e digitais.<br>Para consultar o acervo físico não é necessário autenticação e pode ser feito através do link <a href="https://uol.unifor.br/biblioteca/app/buscaIntegrada">Busca Integrada</a>. <br>
-        <center>
-          <div style="background-color:#cad8e3;padding:10px;border-radius:20px;">
-            <h5>O acesso a este acervo digital só é possível após o login no <a href="https://uol.unifor.br/acesso/app/autenticacao" style="text-decoration:none;"> Unifor Online!</a></h5>
-            <p>Biblioteca > Biblioteca Digital > Busca Integrada ou um clique direto na base desejada.</p>
+    <div class="tab-pane fade show active" id="profile" role="tabpanel" aria-labelledby="profile-tab" style="padding:20px;"><img src="https://uol.unifor.br/biblioteca/img/busca-integrada.svg" class="img-responsive" alt="Busca Integrada" style="max-width:250px;"><br>
+	<p id="item2">Pesquisa integrada no acervo de livros digitais.<br>
+	      <!-- Sophia Search Box Begins-->
+		<!-- <div class="container"> -->
+			<script src="./Terminal - SophiA Biblioteca Web_files/ai.2.min.js.download"></script></head>
+	<body role="document" ng-app="terminalApp" data-new-gr-c-s-check-loaded="14.1108.0" data-gr-ext-installed="">
+<header style="height: 223px;">
+	<!-- <nav id="busca-rapida" class="navbar navbar-fixed-top"> -->
+	<!-- <div class="container"> -->
+		<form name="formCampoBusca" class="form-inline ng-pristine ng-valid-maxlength ng-invalid ng-invalid-validation-error" method="post" id="formCampoBusca" action="https://philos.sophia.com.br/terminal/9575/" ng-controller="BuscaRapidaController as buscaRapidaCtrl" target="_blank">
+			<input type="hidden" name="Guid" id="Guid" value="">
+			<!-- <input type="hidden" id="TipoBuscaRapida" name="TipoBuscaRapida" ng-value="buscaRapidaCtrl.opcaoSelecionada.Codigo" value="0"> -->
+			<!-- <input type="hidden" id="IniciadoCom" name="IniciadoCom" ng-value="buscaRapidaCtrl.iniciadoCom" value="false">: -->
+			<!-- <ul class="nav navbar-nav" id="divBuscaRapida"> -->
+				<!-- <li> -->
+					<div class="input-group">
+						<div class="input-group mb-3 opcao-busca">
+							<!-- <ul class="dropdown-menu"> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao" class="selecionado">Todos os campos</li> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao">Título</li> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao">Autoria</li> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao">Assunto</li> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao">Série</li> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao">Editora</li> -->
+								<!-- <li ng-repeat="opcao in buscaRapidaCtrl.tipoBuscaTerminalSelecionada.OpcaoSet" ng-class="buscaRapidaCtrl.classLiOpcao(opcao.Codigo)" ng-click="buscaRapidaCtrl.trocarOpcao(opcao.Codigo)" ng-bind="opcao.Descricao">ISBN / ISSN</li> -->
+							<!-- </ul> -->
+						
+						<input class="form-control ng-empty ng-valid-maxlength ng-invalid ng-invalid-validation-error" name="PalavraChave" id="PalavraChave" placeholder="Pesquisar" type="text" maxlength="500" ng-model="palavraChave" validation-error="buscaRapidaCtrl.validacaoPalavraChave()">
+						<span class="input-group-append" title="Pesquisar">
+							<button class="btn btn-outline-secondary" type="submit" ng-disabled="buscaRapidaCtrl.btnDisabled">Buscar</button>
+						</span>
+						</div>
+					</div>
+				<!-- </li> -->
+			<!-- </ul> -->
+		</form>
+	<!-- </div> -->
+<!-- </nav> -->
+</header>
 
-          </div>
-        </center>
+
+	<script>
+		var personalizado = {};
+		var namespaceStorage = 'sb.tw.9575.';
+		var serviceBaseUrl = 'https://philos.sophia.com.br/terminal/9575/';
+		var idiomaAtual = 0;
+		var culturaIdioma = 'pt-BR';
+		var moedaConfigurada = 'R$';
+		var formatoMoedaConfigurada = '$ n';
+		var multiTenant = true;
+		var multiBiblioteca = false;
+		var usaVisualizadorPDF = true;
+		var habilitarIndexacaoArquivo = false;
+		var habilitarIntegracaoOffice365 = false;
+		var habilitarCaptcha = false;
+		var usuarioAutenticado = 'False' == 'True';
+		var terminalRi = false;
+		var permitirUsuariosExternos = false;
+		var exibirServicos = true;
+		var instrumentationKey = '6ca650ef-3446-4807-982d-76cefb9087d3';
+		var usaBuscaCatalogoAutoridades = true;
+		const COR_BASE = '#004af7';
+		TipoBuscaTerminal = { Acervo: 1, Autoridades: 2, Legislacao: 3  };
+		TipoBuscaRapidaAcervo = { TodosOsCampos: 0, Titulo: 1, Autoria: 2, Assunto: 3, Colecao: 4, Editora: 5, ISBNISSN: 6, TodosOsCamposConteudoDigital: 7  };
+		TipoBuscaLegislacao = { TodosOsCampos: 0, TodosOsCamposConteudoDigital: 1, Apelido: 2  };
+		MarcAutoridadeTag = { Lider: 0, NumeroControle: 1, UltimaAtualizacao: 5, Pessoa: 100, Instituicao: 110, Evento: 111, TituloUniforme: 130, TermoCronologico: 148, TermoTopico: 150, LocalGeografico: 151, TermoGeneroForma: 155, SubdivisaoGeral: 180, SubdivisaoGeografica: 181, SubdivisaoCronologica: 182, SubdivisaoForma: 185, RemissivaComplexaVer: 260, RemisivaComplexaVerTambem: 360, PessoaRemissivaVer: 400, InstituicaoRemissivaVer: 410, EventoRemissivaVer: 411, TituloUniformeRemissivaVer: 430, TermoCronologicoRemissivaVer: 448, TermoTopicoRemissivaVer: 450, LocalGeograficoRemissivaVer: 451, TermoGeneroFormaRemissivaVer: 455, SubdivisaoGeralRemissivaVer: 480, SubdivisaoGeograficaRemissivaVer: 481, SubdivisaoCronologicaRemissivaVer: 482, SubdivisaoFormaRemissivaVer: 485, PessoaRemissivaVerTambem: 500, InstituicaoRemissivaVerTambem: 510, EventoRemissivaVerTambem: 511, TituloUniformeRemissivaVerTambem: 530, TermoCronologicoRemissivaVerTambem: 548, TermoTopicoRemissivaVerTambem: 550, LocalGeograficoRemissivaVerTambem: 551, TermoGeneroFormaRemissivaVerTambem: 555, SubdivisaoGeralRemissivaVerTambem: 580, SubdivisaoGeograficaRemissivaVerTambem: 581, SubdivisaoCronologicaRemissivaVerTambem: 582, SubdivisaoFormaRemissivaVerTambem: 585, NotaGeralPrivadaSigilosa: 667, FontePositivaDeDados: 670, TituloRelacionadoAutoridade: 672, TituloNaoRelacionadoAutoridade: 673, FonteNegativaDosDados: 675, DadosHistoricosOuBibliograficos: 678, NotaGeralPublica: 680, NotaDePontoDeAcessoDoAssunto: 681, InformacaoDeCabecalhoApagada: 682, AplicacaoDeNotaHistorica: 688, PessoaOutrosVocabularios: 700, InstituicaoOutrosVocabularios: 710, EventoOutrosVocabularios: 711, TituloUniformeOutrosVocabularios: 730, TermoCronologicoOutrosVocabularios: 748, TermoTopicoOutrosVocabularios: 750, LocalGeograficoOutrosVocabularios: 751, TermoGeneroFormaOutrosVocabularios: 755, SubdivisaoGeralOutrosVocabularios: 780, SubdivisaoGeograficaOutrosVocabularios: 781, SubdivisaoCronologicaOutrosVocabularios: 782, SubdivisaoFormaOutrosVocabularios: 785, LocalEletronicoAcesso: 856  };
+		TipoRepositorioDigital = { Sophia: 0, DSpace: 1, SophiaWeb: 2  };
+		OrigemBusca = { TerminalUnificadaRapida: 1, TerminalUnificadaAvancada: 2, TerminalCarrosselUltimasAquisicoes: 3, TerminalCarrosselCategoria: 4, TerminalCarrosselMaisEmprestados: 5, TerminalCarrosselPublicoAlvo: 6, TerminalLegislacaoRapida: 7, TerminalLegislacaoAvancada: 8, TerminalRiAceleradores: 9, TerminalCarrosselImagensMaisSolicitadas: 10, TerminalCarrosselLevantamentoBibliografico: 11  };
+		TipoOrdenacaoLegislacao = { DataPublicacaoDecrescente: 1, DataPublicacaoCrescente: 2, Norma: 3  };
+		TipoRetornoGovbr = { LoginNaoEfetuado: 0, Sucesso: 1, PermissaoNegada: 2, RetornoDoSsoSemDados: 3  };
+		MetodoRequisicao = { Get: 0, Post: 1  };
+	</script>
+
+	<script src="./Terminal - SophiA Biblioteca Web_files/scripts"></script>
+
+	<script src="./Terminal - SophiA Biblioteca Web_files/terminalWeb-termos.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/terminalWeb.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/angular-ui.min.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/app.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/kendoui"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/kendo.culture.pt-BR.min.js.download"></script>
+
+	<script>
+		kendo.cultures[culturaIdioma].numberFormat.currency.symbol = moedaConfigurada;
+		kendo.cultures[culturaIdioma].numberFormat.currency.pattern = ["-" + formatoMoedaConfigurada, formatoMoedaConfigurada];
+	</script>
+		
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async="" src="./Terminal - SophiA Biblioteca Web_files/js"></script>
+			<script>
+				window.dataLayer = window.dataLayer || [];
+				function gtag() { dataLayer.push(arguments); }
+				gtag('js', new Date());
+				gtag('config', 'UA-177080613-1');
+			</script>
+		
+	<script src="./Terminal - SophiA Biblioteca Web_files/buscaRapidaService-termos.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/buscaRapidaService.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/buscaRapidaController-termos.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/buscaRapidaController.js.download"></script>
+	<script src="./Terminal - SophiA Biblioteca Web_files/validationErrorDirective.js.download"></script>
+
+
+	</div>
     </div>
 
   </div>
